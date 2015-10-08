@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/room"
+    tools:context="org.geek.link.MainActivity" >
+    
+    <org.geek.link.view.GameView 
+        android:id="@+id/gameView"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_alignParentBottom="true"
+       android:background="#1e72bb"
+       android:gravity="center"
+       >
+       <Button 
+           android:id="@+id/startButton"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="@drawable/button_selector"
+           />
+       <TextView 
+           android:id="@+id/timeText"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:textSize="20sp"
+           android:width="150dp"
+           android:textColor="#ff9"
+           />
+   </LinearLayout>
+
+</RelativeLayout>
